@@ -21,3 +21,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from gtaxl-common
 $(call inherit-product, device/samsung/gtaxl-common/gtaxl-common.mk)
+
+#Interherit from dalvic mem allocation overrides
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-2048-dalvik-heap.mk)
+ 
