@@ -26,6 +26,10 @@ ifneq ($(filter gtaxlltexx,$(TARGET_DEVICE)),)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/init)
+$(shell cp $(TARGET_KERNEL_SOURCE)/init/vmm.elf out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/init/vmm.elf)
+
+
 include $(CLEAR_VARS)
 
 endif
