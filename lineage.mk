@@ -15,7 +15,9 @@ $(call inherit-product, vendor/nexus/product.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="gtaxlltexx" \
-    TARGET_DEVICE="gtaxllte"
+    TARGET_DEVICE="gtaxllte" \
+    BUILD_FINGERPRINT="samsung/gtaxlltexx/gtaxllte:7.0/NRD90M/T585XXU2BQI9:user/test-keys" \
+    PRIVATE_BUILD_DESC="gtaxlltexx-user 7.0 NRD90M T585XXU2BQI9 release-keys"
 
 PRODUCT_NAME := lineage_gtaxlltexx
 PRODUCT_DEVICE := gtaxlltexx
