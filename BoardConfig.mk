@@ -31,7 +31,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/samsung/gtaxlltexx/include
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_gtaxlltexx_defconfig
-
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/gtaxlltexx/dt.img
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3565158400
 
